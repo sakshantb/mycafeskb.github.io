@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header</title>
+  <!-- font-awesome -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- jqueryd -->
+  <style>
+    .inactive{
+      color: black;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="maincontainer">
+    <div id="header">
+      <div id="logo">
+        <img src="img/logo.png" alt="image">
+        <h1>
+          Cafe House
+        </h1>
+      </div>
+      <nav id="navlist">
+        <ul>
+          <li class="active" ><a href="index.html" class="inactive" id="indexhtml"> HOME</a></li>
+          <li class="active"><a href="TODAY SPECIAL.html" class="inactive" id="todayhtml">TODAY SPECIAL</a> </li>
+          <li class="active"><a href="menu.html" class="inactive">MENU</a> </li>
+          <li class="active"><a href="contact.html" class="inactive">CONTACT</a> </li>
+        </ul>
+      </nav>
+
+    </div>
+    
+  </div>
+   <script>
+    $(document).ready(function(){
+      $('.inactive').click(function(){
+        $('.inactive').addClass(".inactive")
+      });
+    });
+  </script>
+</body>
+
+</html>
